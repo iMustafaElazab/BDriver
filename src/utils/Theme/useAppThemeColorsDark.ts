@@ -1,6 +1,6 @@
 import {MD3DarkTheme} from 'react-native-paper';
-import {AppColors} from '@src/enums';
 import type {MD3Colors} from 'react-native-paper/lib/typescript/types';
+import {AppColors} from 'src/enums';
 
 const useAppThemeColorsDark = () =>
   ({

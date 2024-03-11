@@ -1,6 +1,6 @@
-import type {User, ApiRequest} from '@src/core';
-import {httpClient} from '@src/core';
-import {store} from '@src/store';
+import type {User, ApiRequest} from 'src/core';
+import {httpClient} from 'src/core';
+import {store} from 'src/store';
 
 const queryUser = {
   // TODO: Change params, endpoint, method, and response mapping based on API requirements.

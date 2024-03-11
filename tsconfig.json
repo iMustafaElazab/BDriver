@@ -4,9 +4,9 @@
     "module": "esnext",
     "baseUrl": ".",
     "paths": {
-      "@src/*": ["./src/*"],
-      "@packageJson": ["./package.json"],
-      "@appJson": ["./app.json"]
+      // "@src/*": ["./src/*"],
+      // "@packageJson": ["./package.json"],
+      // "@appJson": ["./app.json"]
     }
   },
   "include": ["./index.js", "src", "@types", "__tests__"]

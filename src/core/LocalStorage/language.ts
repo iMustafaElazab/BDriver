@@ -1,11 +1,11 @@
+import type {AppLanguages} from 'src/enums';
 import {
   useLocalStorage,
   getString,
   setString,
   removeItem,
   LocalStorageKeys,
-} from '@src/core';
-import type {AppLanguages} from '@src/enums';
+} from 'src/core';
 
 const getLogMessage = (message: string) =>
   `## LocalStorage::language:: ${message}`;

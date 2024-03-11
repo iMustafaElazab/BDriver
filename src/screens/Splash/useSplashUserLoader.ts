@@ -1,11 +1,11 @@
 import * as React from 'react';
-import type {User} from '@src/core';
+import type {User} from 'src/core';
 import {
   getUser as getLocalStorageUser,
   useGetUserDetailsApi,
   setUser as setLocalStorageUser,
-} from '@src/core';
-import {useAppDispatch, setUser as setStateUser} from '@src/store';
+} from 'src/core';
+import {useAppDispatch, setUser as setStateUser} from 'src/store';
 
 export const useSplashUserLoader = (isBootSplashLogoLoaded: boolean) => {
   // #region Logger

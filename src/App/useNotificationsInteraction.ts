@@ -1,8 +1,8 @@
 import messaging from '@react-native-firebase/messaging';
 import * as React from 'react';
-import type {Notification} from '@src/core';
-import {processNotification} from '@src/utils';
 import type {FirebaseMessagingTypes} from '@react-native-firebase/messaging';
+import type {Notification} from 'src/core';
+import {processNotification} from 'src/utils';
 
 export const useNotificationsInteraction = () => {
   // #region Logger

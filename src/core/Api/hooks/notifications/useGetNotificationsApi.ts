@@ -1,17 +1,17 @@
 import {useInfiniteQuery} from '@tanstack/react-query';
 import {default as Config} from 'react-native-config';
-import {fakerNotifications, queryNotifications} from '@src/core';
-import type {
-  PagingResponse,
-  Notification,
-  ServerError,
-  ApiRequest,
-} from '@src/core';
 import type {
   InfiniteData,
   UseInfiniteQueryOptions,
   QueryKey,
 } from '@tanstack/react-query';
+import type {
+  PagingResponse,
+  Notification,
+  ServerError,
+  ApiRequest,
+} from 'src/core';
+import {fakerNotifications, queryNotifications} from 'src/core';
 
 const useGetNotificationsApi = (
   options?: Omit<

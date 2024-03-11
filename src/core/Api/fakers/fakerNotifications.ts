@@ -5,8 +5,8 @@ import type {
   UpdateFcmTokenBody,
   UpdateFcmTokenResponse,
   MarkNotificationReadResponse,
-} from '@src/core';
-import {randomIntFromInterval} from '@src/utils';
+} from 'src/core';
+import {randomIntFromInterval} from 'src/utils';
 
 const getLogMessage = (message: string) =>
   `## fakers::fakerNotifications:: ${message}`;

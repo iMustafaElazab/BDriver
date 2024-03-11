@@ -2,12 +2,12 @@ import {FlatList} from '@eslam-elmeniawy/react-native-common-components';
 import * as React from 'react';
 import {useTranslation} from 'react-i18next';
 import {ActivityIndicator} from 'react-native-paper';
-import {ListEmptyComponent, ListLoadingMore} from '@src/components';
-import {useGetNotificationsApi} from '@src/core';
-import {useFocusNotifyOnChangeProps} from '@src/utils';
 import NotificationItem from './NotificationItem';
 import NotificationsListSeparator from './NotificationsListSeparator';
 import styles from './styles';
+import {ListEmptyComponent, ListLoadingMore} from 'src/components';
+import {useGetNotificationsApi} from 'src/core';
+import {useFocusNotifyOnChangeProps} from 'src/utils';
 
 export default React.memo(() => {
   const {t: translate} = useTranslation();

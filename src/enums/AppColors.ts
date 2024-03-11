@@ -7,7 +7,7 @@ enum AppColors {
   // Base seed color for the theme.
   SEED = '#6750A4',
   // Light theme colors.
-  THEME_LIGHT_PRIMARY = '#6750A4',
+  THEME_LIGHT_PRIMARY = '##FE9C00',
   THEME_LIGHT_ON_PRIMARY = '#FFFFFF',
   THEME_LIGHT_PRIMARY_CONTAINER = '#EADDFF',
   THEME_LIGHT_ON_PRIMARY_CONTAINER = '#21005D',

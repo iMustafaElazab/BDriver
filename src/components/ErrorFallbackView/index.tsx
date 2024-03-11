@@ -4,10 +4,10 @@ import {StyleSheet} from 'react-native';
 import {hide as rnBootSplashHide} from 'react-native-bootsplash';
 import RNRestart from 'react-native-restart';
 import {SafeAreaProvider} from 'react-native-safe-area-context';
-import {Screen} from '@src/components';
-import {translate} from '@src/core';
-import {useAppTheme} from '@src/utils';
 import styles from './styles';
+import {Screen} from 'src/components';
+import {translate} from 'src/core';
+import {useAppTheme} from 'src/utils';
 
 export default React.memo(() => {
   const theme = useAppTheme();

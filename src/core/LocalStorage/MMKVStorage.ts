@@ -1,5 +1,5 @@
 import {MMKVLoader, create} from 'react-native-mmkv-storage';
-import type {LocalStorageKeys} from '@src/core';
+import type {LocalStorageKeys} from 'src/core';
 
 const getLogMessage = (message: string) => `## LocalStorage:: ${message}`;
 

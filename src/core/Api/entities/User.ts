@@ -1,4 +1,4 @@
-import type {BaseUser} from '@src/core';
+import type {BaseUser} from 'src/core';
 
 interface User extends BaseUser {
   unreadNotificationsCount?: number;

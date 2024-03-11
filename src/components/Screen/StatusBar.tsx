@@ -3,8 +3,8 @@ import {View} from 'react-native';
 import {StatusBar} from 'react-native-bars';
 import {useSafeAreaInsets} from 'react-native-safe-area-context';
 import tinyColor from 'tinycolor2';
-import {useAppTheme} from '@src/utils';
 import type {Props} from './types';
+import {useAppTheme} from 'src/utils';
 
 export default React.memo((props: Props) => {
   const insets = useSafeAreaInsets();

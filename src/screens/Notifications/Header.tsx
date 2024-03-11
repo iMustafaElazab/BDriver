@@ -2,7 +2,7 @@ import {useNavigation} from '@react-navigation/native';
 import * as React from 'react';
 import {useTranslation} from 'react-i18next';
 import {Appbar} from 'react-native-paper';
-import type {RootStackScreenProps} from '@src/navigation';
+import type {RootStackScreenProps} from 'src/navigation';
 
 export default React.memo(() => {
   // #region Logger

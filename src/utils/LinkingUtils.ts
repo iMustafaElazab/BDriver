@@ -1,6 +1,6 @@
 import {Linking} from 'react-native';
 import {Toast} from 'react-native-toast-notifications';
-import {translate} from '@src/core';
+import {translate} from 'src/core';
 
 const getLogMessage = (message: string) => `## LinkingUtils:: ${message}`;
 

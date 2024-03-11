@@ -1,8 +1,5 @@
 import axios from 'axios';
 import {default as Config} from 'react-native-config';
-import type {ServerError, ServerErrorResponse} from '@src/core';
-import {translate, getCurrentLocale} from '@src/core/I18n';
-import {setErrorDialogMessage, store} from '@src/store';
 import ConsoleColors from './ConsoleColors';
 import skip401Urls from './skip401Urls';
 import type {
@@ -10,6 +7,9 @@ import type {
   AxiosResponse,
   InternalAxiosRequestConfig,
 } from 'axios';
+import type {ServerError, ServerErrorResponse} from 'src/core';
+import {translate, getCurrentLocale} from 'src/core/I18n';
+import {setErrorDialogMessage, store} from 'src/store';
 
 const getLogMessage = (message: string) => `## HttpClient:: ${message}`;
 

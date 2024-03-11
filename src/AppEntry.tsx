@@ -4,7 +4,8 @@ import messaging from '@react-native-firebase/messaging';
 import * as React from 'react';
 import {default as PushNotification} from 'react-native-push-notification';
 import {enableScreens} from 'react-native-screens';
-import {processNotification} from '@src/utils';
+import App from './App';
+import {processNotification} from './utils';
 
 enableScreens();
 
@@ -43,8 +44,6 @@ function AppEntry({isHeadless}: Readonly<{isHeadless?: boolean}>) {
     // App has been launched in the background by iOS, ignore.
     return null;
   }
-
-  const App = React.lazy(() => import('@src/App'));
 
   return (
     <React.Suspense>

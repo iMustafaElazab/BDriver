@@ -1,11 +1,11 @@
 import * as React from 'react';
 import {Animated, StyleSheet} from 'react-native';
-import {Screen} from '@src/components';
-import {AppImages} from '@src/enums';
-import type {RootStackScreenProps} from '@src/navigation';
-import {useAppTheme} from '@src/utils';
 import styles from './styles';
 import {useSplash} from './useSplash';
+import type {RootStackScreenProps} from 'src/navigation';
+import {Screen} from 'src/components';
+import {AppImages} from 'src/enums';
+import {useAppTheme} from 'src/utils';
 
 export default React.memo((props: RootStackScreenProps<'splash'>) => {
   // #region Variables

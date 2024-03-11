@@ -1,8 +1,8 @@
 import {useQuery} from '@tanstack/react-query';
 import {default as Config} from 'react-native-config';
-import {fakerUser, queryUser} from '@src/core';
-import type {User, ServerError} from '@src/core';
 import type {UseQueryOptions} from '@tanstack/react-query';
+import type {User, ServerError} from 'src/core';
+import {fakerUser, queryUser} from 'src/core';
 
 const useGetUserDetailsApi = (
   options?: Omit<UseQueryOptions<User, ServerError>, 'queryFn' | 'queryKey'>,

@@ -1,5 +1,5 @@
-import type {ServerErrorResponse} from '@src/core';
 import type {AxiosError} from 'axios';
+import type {ServerErrorResponse} from 'src/core';
 
 interface ServerError extends AxiosError<ServerErrorResponse> {
   date?: Date;

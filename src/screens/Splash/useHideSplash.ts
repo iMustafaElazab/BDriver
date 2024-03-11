@@ -1,8 +1,8 @@
 import * as React from 'react';
 import {Animated, Dimensions} from 'react-native';
 import {hide as rnBootSplashHide} from 'react-native-bootsplash';
-import {useAppSelector} from '@src/store';
 import type {UseHideSplashProps} from './useHideSplash.types';
+import {useAppSelector} from 'src/store';
 
 export const useHideSplash = (props: UseHideSplashProps) => {
   // #region Logger
@@ -26,7 +26,8 @@ export const useHideSplash = (props: UseHideSplashProps) => {
 
   const openNextScreen = React.useCallback(() => {
     console.info(getLogMessage('openNextScreen'));
-    navigation.replace(stateUser ? 'home' : 'login');
+    navigation.replace('login');
+    // navigation.replace(stateUser ? 'home' : 'login');
   }, [navigation, stateUser]);
 
   const hideSplash = React.useCallback(async () => {

@@ -4,10 +4,10 @@ import {Platform, NativeModules, I18nManager} from 'react-native';
 import {default as Config} from 'react-native-config';
 import * as RNLocalize from 'react-native-localize';
 import RNRestart from 'react-native-restart';
-import {getLanguage, setLanguage} from '@src/core';
-import {AppLanguages} from '@src/enums';
-import ar from '@src/translations/ar.json';
-import en from '@src/translations/en.json';
+import {getLanguage, setLanguage} from 'src/core';
+import {AppLanguages} from 'src/enums';
+import ar from 'src/translations/ar.json';
+import en from 'src/translations/en.json';
 
 const getLogMessage = (message: string) => `## I18n:: ${message}`;
 

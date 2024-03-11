@@ -2,9 +2,9 @@ import {Text} from '@eslam-elmeniawy/react-native-common-components';
 import * as React from 'react';
 import {StyleSheet, View} from 'react-native';
 import tinycolor from 'tinycolor2';
-import {useAppTheme} from '@src/utils';
 import styles from './styles';
 import type {ToastProps} from 'react-native-toast-notifications/lib/typescript/toast';
+import {useAppTheme} from 'src/utils';
 
 export default React.memo((toastOptions: ToastProps) => {
   const theme = useAppTheme();

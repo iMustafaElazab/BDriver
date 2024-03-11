@@ -1,8 +1,8 @@
 import messaging from '@react-native-firebase/messaging';
 import * as React from 'react';
-import {getUser} from '@src/core';
-import {useAppDispatch, setUser as setStateUser} from '@src/store';
-import {displayLocalNotification} from '@src/utils';
+import {getUser} from 'src/core';
+import {useAppDispatch, setUser as setStateUser} from 'src/store';
+import {displayLocalNotification} from 'src/utils';
 
 export const useForegroundMessagesListener = () => {
   // #region Logger

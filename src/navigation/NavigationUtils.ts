@@ -13,7 +13,7 @@ import {
   CommonActions,
 } from '@react-navigation/native';
 
-import type {RootStackParamList} from '@src/navigation';
+import type {RootStackParamList} from 'src/navigation';
 
 const getLogMessage = (message: string) => `## NavigationUtils:: ${message}`;
 

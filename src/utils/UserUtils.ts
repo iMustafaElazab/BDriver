@@ -1,17 +1,17 @@
 import messaging from '@react-native-firebase/messaging';
+import {queryClient} from './queryClient';
+import type {User} from 'src/core';
 import {
   setUser as setLocalStorageUser,
   removeUser as removeLocalStorageUser,
-} from '@src/core';
-import type {User} from '@src/core';
-import {reset} from '@src/navigation';
+} from 'src/core';
+import {reset} from 'src/navigation';
 import {
   store,
   setUser as setStateUser,
   removeUser as removeStateUser,
   setErrorDialogMessage,
-} from '@src/store';
-import {queryClient} from '@src/utils';
+} from 'src/store';
 
 const getLogMessage = (message: string) => `## UserUtils:: ${message}`;
 
@@ -49,7 +49,7 @@ export const saveUserDataOpenHome = (user: User, errorMessage?: string) => {
   console.info(getLogMessage('saveUserDataOpenHome'), user, errorMessage);
 
   saveUserData(user, errorMessage, () => {
-    reset('home');
+    // reset('home');
   });
 };
 

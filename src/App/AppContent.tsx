@@ -6,9 +6,6 @@ import {QueryClientProvider} from '@tanstack/react-query';
 import * as React from 'react';
 import {Provider as PaperProvider} from 'react-native-paper';
 import {ToastProvider} from 'react-native-toast-notifications';
-import {ErrorDialog, Toast} from '@src/components';
-import {NavigationContainer} from '@src/navigation';
-import {useAppTheme, queryClient} from '@src/utils';
 import {useFirebaseMessagingInitialization} from './useFirebaseMessagingInitialization';
 import {useForegroundMessagesListener} from './useForegroundMessagesListener';
 import {useLocalizationInitialization} from './useLocalizationInitialization';
@@ -17,6 +14,9 @@ import {useNetworkListener} from './useNetworkListener';
 import {useNotificationsInteraction} from './useNotificationsInteraction';
 import {useReactQueryFocusManager} from './useReactQueryFocusManager';
 import {useReactQueryOnlineManager} from './useReactQueryOnlineManager';
+import {ErrorDialog, Toast} from 'src/components';
+import {NavigationContainer} from 'src/navigation';
+import {useAppTheme, queryClient} from 'src/utils';
 
 export default React.memo(() => {
   useLogInitialization();

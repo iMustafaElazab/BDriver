@@ -1,16 +1,15 @@
 import * as React from 'react';
-import {Screen, ScrollContainer} from '@src/components';
-import Form from './Form';
-import Header from './Header';
-import styles from './styles';
+import Contain from './contain';
+import styles from './style';
+import Screen from 'src/components/Screen';
+import ScrollContainer from 'src/components/ScrollContainer';
 
 export default React.memo(() => (
   <Screen>
-    <Header />
     <ScrollContainer
       style={styles.scrollView}
       contentContainerStyle={styles.scrollViewContent}>
-      <Form />
+      <Contain />
     </ScrollContainer>
   </Screen>
 ));

@@ -3,7 +3,7 @@ import * as React from 'react';
 import {default as Config} from 'react-native-config';
 import {getApplicationName} from 'react-native-device-info';
 import {QueryClientManager, reactotronReactQuery} from 'reactotron-react-query';
-import {queryClient} from '@src/utils';
+import {queryClient} from 'src/utils';
 
 export const useLogInitialization = () => {
   React.useEffect(() => {

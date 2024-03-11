@@ -2,19 +2,20 @@ import {default as PushNotificationIOS} from '@react-native-community/push-notif
 import {Platform} from 'react-native';
 import {getBundleId} from 'react-native-device-info';
 import {default as PushNotification} from 'react-native-push-notification';
-import {queryNotifications} from '@src/core';
+
+import {queryClient} from '.';
+import type {FirebaseMessagingTypes} from '@react-native-firebase/messaging';
 import type {
+  Notification,
   MarkNotificationReadResponse,
   ServerError,
   ApiRequest,
-  Notification,
   User,
-} from '@src/core';
-import {AppColors} from '@src/enums';
-import {push} from '@src/navigation';
-import {store, setUser as setStateUser} from '@src/store';
-import {queryClient} from '@src/utils';
-import type {FirebaseMessagingTypes} from '@react-native-firebase/messaging';
+} from 'src/core';
+import {queryNotifications} from 'src/core';
+import {AppColors} from 'src/enums';
+import {push} from 'src/navigation';
+import {store, setUser as setStateUser} from 'src/store';
 
 const getLogMessage = (message: string) => `## NotificationUtils:: ${message}`;
 

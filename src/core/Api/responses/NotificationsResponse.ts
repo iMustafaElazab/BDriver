@@ -1,4 +1,4 @@
-import type {Notification} from '@src/core';
+import type {Notification} from 'src/core';
 
 // TODO: Construct login response based on API.
 interface NotificationsResponse {

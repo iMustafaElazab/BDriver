@@ -1,6 +1,6 @@
-import type {ApiRequest, LoginBody, User, LogoutResponse} from '@src/core';
-import {randomIntFromInterval} from '@src/utils';
 import {user} from './data';
+import type {ApiRequest, LoginBody, User, LogoutResponse} from 'src/core';
+import {randomIntFromInterval} from 'src/utils';
 
 const getLogMessage = (message: string) => `## fakers::fakerAuth:: ${message}`;
 

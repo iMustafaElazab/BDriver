@@ -1,9 +1,12 @@
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import * as React from 'react';
-import type {RootStackParamList} from '@src/navigation';
+import type {RootStackParamList} from 'src/navigation';
 
 // Screens.
-import {Splash, Login, Home, Notifications} from '@src/screens';
+import {Splash, Notifications} from 'src/screens';
+import ForgetPassword from 'src/screens/Auth/ForgetPassword';
+import Login from 'src/screens/Auth/Login';
+import Register from 'src/screens/Auth/Register';
 
 // Navigators.
 // TODO: Add navigators imports here.
@@ -21,7 +24,8 @@ export default React.memo(() => (
     {/* Screens */}
     <stack.Screen name="splash" component={Splash} />
     <stack.Screen name="login" component={Login} />
-    <stack.Screen name="home" component={Home} />
+    <stack.Screen name="register" component={Register} />
+    <stack.Screen name="forgetPassword" component={ForgetPassword} />
     <stack.Screen name="notifications" component={Notifications} />
 
     {/* Navigators */}

@@ -1,11 +1,11 @@
-import type {User} from '@src/core';
+import type {User} from 'src/core';
 import {
   useLocalStorage,
   getMap,
   setMap,
   removeItem,
   LocalStorageKeys,
-} from '@src/core';
+} from 'src/core';
 
 const getLogMessage = (message: string) => `## LocalStorage::user:: ${message}`;
 

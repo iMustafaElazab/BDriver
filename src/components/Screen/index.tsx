@@ -4,11 +4,11 @@ import {
   SafeAreaProvider,
   useSafeAreaInsets,
 } from 'react-native-safe-area-context';
-import {useAppTheme} from '@src/utils';
 import NavigationBar from './NavigationBar';
 import StatusBar from './StatusBar';
 import styles from './styles';
 import type {Props} from './types';
+import {useAppTheme} from 'src/utils';
 
 export default React.memo((props: Props) => {
   const insets = useSafeAreaInsets();

@@ -1,7 +1,7 @@
 import * as React from 'react';
 import {default as PushNotification} from 'react-native-push-notification';
-import {translate} from '@src/core';
-import {defaultChannelId, localChannelId} from '@src/utils';
+import {translate} from 'src/core';
+import {defaultChannelId, localChannelId} from 'src/utils';
 
 export const useNotificationsChannels = () => {
   // #region Logger

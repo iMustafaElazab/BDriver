@@ -1,5 +1,5 @@
 {
-  "app_name": "BDriver",
+  "app_name": "First",
   "error_fallback_title": "عفوًا، هناك خطأ ما",
   "error_fallback_message": "واجه التطبيق مشكلة ولم يتمكن من المتابعة. ونحن نعتذر عن أي إزعاج قد تسبب به هذا! اضغط على الزر أدناه لإعادة تشغيل التطبيق.",
   "restart_app": "أعد تشغيل التطبيق",
@@ -17,7 +17,21 @@
   "error_load_data": "خطأ اثناء تحميل {{data}}",
   "login": "تسجيل الدخول",
   "username": "اسم المستخدم",
+  "email-address": "البريد الالكتروني",
+  "phone": "رقم الجوال",
   "password": "كلمة المرور",
   "home": "الرئيسية",
-  "notifications": "الاشعارات"
+  "notifications": "الاشعارات",
+  "name-empty-error": "حقل الاسم مطلوب",
+  "email-empty-error": "حقل البريد الالكتروني مطلوب",
+  "email-valid-error": "حقل البريد الالكتروني ليس صحيح",
+  "phone-empty-error": "حقل رقم الجوال مطلوب",
+  "phone-valid-error": "حقل رقم الجوال ليس صحيح",
+  "password-empty-error": "حقل رقم المرور مطلوب",
+  "register": "انشاء حساب",
+  "stores": "متاجر",
+  "auctions": "Auctions",
+  "category": "Category",
+  "menu": "Menu",
+  "update": "تحديث"
 }

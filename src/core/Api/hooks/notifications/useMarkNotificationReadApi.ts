@@ -1,12 +1,12 @@
 import {useQueryClient, useMutation} from '@tanstack/react-query';
 import {default as Config} from 'react-native-config';
-import {fakerNotifications, queryNotifications} from '@src/core';
+import type {UseMutationOptions} from '@tanstack/react-query';
 import type {
   MarkNotificationReadResponse,
   ServerError,
   ApiRequest,
-} from '@src/core';
-import type {UseMutationOptions} from '@tanstack/react-query';
+} from 'src/core';
+import {fakerNotifications, queryNotifications} from 'src/core';
 
 const useMarkNotificationReadApi = (
   options?: Omit<
